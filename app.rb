@@ -20,6 +20,7 @@ class App < Sinatra::Base
   end
 
 
-  get('/'){ slim :layout}
+  get('/'){ slim :index}
+  
 
 end
