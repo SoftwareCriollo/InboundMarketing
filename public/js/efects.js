@@ -1,8 +1,8 @@
 $(document).ready(function(cuenta) {
-	var scrollorama = $.scrollorama({blocks:'.fold_quees', enablePin:false});
+	var scrollorama = $.scrollorama({blocks:'#wrapper', enablePin:false});
 	scrollorama.animate('.fold_quees .quees',{
-		duration: 200, property:'zoom', start: 0, end: 1},{
-		duration: 200, property:'opacity', start: 0, end: 1}
+		duration: 770, property:'zoom', start: 0, end: 1},{
+		duration: 800, property:'opacity', start: 0, end: 1}
 	);
 
 
