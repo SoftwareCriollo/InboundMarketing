@@ -68,22 +68,22 @@ $(document).ready(function(cuenta) {
 	$('#meta').click(function(){
 		$('.description').hide();
 		$('#text_meta').fadeIn();
-		$('.arrow').css("margin-left","300px");
+		$('.arrow').css("margin-left","280px");
 	});
 	$('#contenido').click(function(){
 		$('.description').hide();
 		$('#text_contenido').fadeIn();
-		$('.arrow').css("margin-left","525px");
+		$('.arrow').css("margin-left","495px");
 	});
 	$('#viral').click(function(){
 		$('.description').hide();
 		$('#text_viral').fadeIn();
-		$('.arrow').css("margin-left","750px");
+		$('.arrow').css("margin-left","705px");
 	});
 	$('#viral2').click(function(){
 		$('.description').hide();
-		$('#text_viral').fadeIn();
-		$('.arrow').css("margin-left","980px");
+		$('#text_viral2').fadeIn();
+		$('.arrow').css("margin-left","915px");
 	});
 	
 });
