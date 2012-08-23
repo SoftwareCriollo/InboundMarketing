@@ -143,6 +143,43 @@ body {
   position: absolute;
   z-index: 1; }
 
+.slide_graph {
+	height: 20px;
+	margin: 150px 245px 0 0;
+	overflow: hidden;
+}
+
+.slide_graph ul{
+	margin: 5px 5px;
+	padding: 0;
+	list-style: none;
+}
+
+.slide_graph ul li {
+	border: 1px solid #a1a1a1;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-o-border-radius: 100px;
+	border-radius: 100px;
+	cursor: pointer;
+	float: left;
+	height: 8px;
+	margin: 0 5px;
+	padding: 0;
+	width: 8px;
+}
+
+.slide_off {
+	background-color: transparent;
+}
+.slide_active, li:active {
+	background-color: #a1a1a1;
+}
+
+.slide_graph ul li span{
+	display: none;
+}
+
 .fold_why {
   height: 680px; }
   .fold_why .box {

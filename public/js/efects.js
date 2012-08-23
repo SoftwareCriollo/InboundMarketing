@@ -4,16 +4,19 @@ $(document).ready(function(cuenta) {
 		duration: 1200, property:'zoom', start: 0, end: 1},{
 		duration: 1300, property:'opacity', start: 0, end: 1}
 	);
+
 	/*PERCENT*/
 	$next = "#graph_1";
 	$percent = $('#percent img');
 	$coming = graph1();
 	function time() {
 		$('.fold_inboundoutbound .image .text').fadeOut('slow');
+		$('.slide_graph li').removeClass("slide_active").addClass("slide_off");
 		$coming();
 	}
 	function graph1() {
 		$($next).delay(600).fadeIn('slow');
+		$('.slide_graph li#first').removeClass("slide_off").addClass("slide_active");
 		$($percent).transition({ rotate: 37, easing: 'in'});
 		setTimeout(function(){
 			$next = "#graph_2";
@@ -24,6 +27,7 @@ $(document).ready(function(cuenta) {
 	}
 	function graph2() {
 		$($next).delay(600).fadeIn('slow');
+		$('.slide_graph li#second').removeClass("slide_off").addClass("slide_active");
 		$($percent).transition({ rotate: 143, easing: 'in'});
 		setTimeout(function(){
 			$next = "#graph_3";
@@ -33,6 +37,7 @@ $(document).ready(function(cuenta) {
 	}
 	function graph3() {
 		$($next).delay(600).fadeIn('slow');
+		$('.slide_graph li#third').removeClass("slide_off").addClass("slide_active");
 		$($percent).transition({ rotate: 147, easing: 'in'});
 		setTimeout(function(){
 			$next = "#graph_4";
@@ -42,6 +47,7 @@ $(document).ready(function(cuenta) {
 	}
 	function graph4() {
 		$($next).delay(600).fadeIn('slow');
+		$('.slide_graph li#fourth').removeClass("slide_off").addClass("slide_active");
 		$($percent).transition({ rotate: 142, easing: 'in'});
 		setTimeout(function(){
 			$next = "#graph_5";
@@ -51,6 +57,7 @@ $(document).ready(function(cuenta) {
 	}
 	function graph5() {
 		$($next).delay(600).fadeIn('slow');
+		$('.slide_graph li#fifth').removeClass("slide_off").addClass("slide_active");
 		$($percent).transition({ rotate: 73, easing: 'in'});
 		setTimeout(function(){
 			$next = "#graph_1";
