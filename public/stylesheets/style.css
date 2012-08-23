@@ -43,7 +43,7 @@ body {
 .right {
   float: right; }
 
-.fold_how, .fold_examples {
+.fold_how {
   height: 768px; }
 
 .fold_intro {
@@ -66,28 +66,37 @@ body {
 .intro .quees {
   width: 10em;
   height: 10em;
-  margin: 0; }
+  margin: 0 0 0 60px; }
   .intro .quees p {
     margin: 2.6em 0 0 0;
     font-size: 1.5em;
     letter-spacing: -0.5px; }
 
-.fold_connection_left, .fold_connection_right {
-  background-image: url("/images/bg_connection1.png");
-  width: 567px;
-  height: 411px;
-  margin: 0 0 0 75px; }
+.fold_connection_left {
+  width: 100%; }
+  .fold_connection_left .separation {
+    width: 10%;
+    margin: 0 10px 0 135px; }
 
-.fold_connection_right {
-  background-image: url("/images/bg_connection2.png");
-  margin: 0 230px 0 0;
-  width: 624px; }
+h4.signature {
+  font-size: 14px;
+  letter-spacing: 0.5px; }
 
 .fold_connection {
-  background-image: url("/images/bg_connection3.png");
-  margin: 0 230px 0 0;
-  width: 16px;
-  height: 329px; }
+  margin: 10px 0 100px 0; }
+  .fold_connection .testimonial {
+    width: 100%;
+    margin: 70px 0 0 0; }
+    .fold_connection .testimonial .texto {
+      width: 80%;
+      margin: 0 0 60px 0; }
+    .fold_connection .testimonial p {
+      font-size: 20px;
+      margin: 0; }
+    .fold_connection .testimonial p.signature {
+      font-size: 14px; }
+    .fold_connection .testimonial .image {
+      width: 17%; }
 
 .connection_intro.title {
   margin: 205px 50px 0 0; }
@@ -95,7 +104,7 @@ body {
 .fold_quees {
   width: 100%;
   text-align: center;
-  height: 700px; }
+  height: 740px; }
   .fold_quees .text {
     width: 52%;
     margin: 0 110px 0 0; }
@@ -121,7 +130,7 @@ body {
     text-transform: uppercase; }
 
 .fold_inboundoutbound .text {
-  height: 500px; }
+  height: 670px; }
 .fold_inboundoutbound .image .text {
   position: absolute;
   z-index: 2;
@@ -235,7 +244,8 @@ body {
     font-weight: lighter; }
 
 .fold_examples {
-  margin: 30px 0 0 0; }
+  margin: 30px 0 0 0;
+  height: 900px; }
 
 .examples {
   margin: 0  !important;
@@ -244,6 +254,7 @@ body {
   .examples .image {
     margin: 10px 0;
     width: 500px;
+    height: 345px;
     border: 1px solid #ccc; }
   .examples .description {
     margin: 0 0 0 10px;
@@ -327,18 +338,19 @@ body {
   margin: 60px 0 0 0; }
 
 .form_bg {
-  width: 100%;
+  width: 92%;
   background-color: white;
   opacity: 0.9;
   padding: 10px 10px 10px 20px;
   margin: 20px 0 0 0; }
   .form_bg .title {
     width: 45%;
-    border-right: 1px solid #ccc; }
+    border-right: 1px solid #ccc;
+    padding: 0 40px 0 20px; }
     .form_bg .title h1 {
       line-height: 50px; }
   .form_bg .form {
-    width: 50%;
+    width: 45%;
     padding: 0 10px 0 0;
     margin: 40px 0 0 0; }
   .form_bg input {
