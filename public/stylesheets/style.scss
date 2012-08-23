@@ -65,7 +65,7 @@ body {
 
 //*FOLDS*//
 
- .fold_how, .fold_examples{
+ .fold_how{
 	height: 768px;
 }
 
@@ -99,7 +99,7 @@ body {
 	.quees {
 		width: 10em;
 		height: 10em;
-		margin: 0;
+		margin: 0 0 0 60px;
 		
 	  p {
 		margin: 2.6em 0 0 0;
@@ -113,24 +113,48 @@ body {
 
 //*FOLD CONNECTION*//
 
-.fold_connection_left, .fold_connection_right{
-	background-image: url('/images/bg_connection1.png');
-	width: 567px;
-	height: 411px;
-	margin: 0 0 0 75px;
+.fold_connection_left{
+	width: 100%;
+	
+	.separation {
+		width: 10%;
+		margin: 0 10px 0 135px;
+	}
+	
 }
 
-.fold_connection_right{
-	background-image: url('/images/bg_connection2.png');
-	margin: 0 230px 0 0;
-	width: 624px;	
+h4.signature {
+	font-size: 14px;
+	letter-spacing: 0.5px;
 }
+
 
 .fold_connection {
-	background-image: url('/images/bg_connection3.png');
-	margin: 0 230px 0 0;
-	width: 16px;	
-	height: 329px;
+	margin: 10px 0 100px 0;
+	
+	.testimonial {
+		width: 100%;
+		margin: 70px 0 0 0 ;
+		
+		.texto{
+			width: 80%;
+			margin: 0 0 60px 0;
+		}
+		
+		p {
+			font-size: 20px;
+			margin: 0;
+		}
+		
+		p.signature {
+			font-size: 14px;
+		}
+		
+		.image {
+			width: 17%;
+			
+		}
+	}
 }
 
 .connection_intro.title{
@@ -151,7 +175,7 @@ body {
 .fold_quees {		
 	width: 100%;
 	text-align: center;
-	height: 700px;
+	height: 740px;
 
 	.text {
 	  width: 52%;
@@ -192,7 +216,7 @@ body {
 
 .fold_inboundoutbound{
   .text {
-	height: 500px;
+	height: 670px;
 }
 	.image{
 		
@@ -376,6 +400,7 @@ body {
 
 .fold_examples {
 	margin: 30px 0 0 0;
+	height: 900px;
 }
 
 .examples {
@@ -385,7 +410,8 @@ body {
 		  
   .image {
 	  margin: 10px 0;
-		width: 500px;				
+		width: 500px;		
+		height: 345px;		
 		border: 1px solid #ccc;
   }
 
@@ -501,7 +527,7 @@ font-size: 24px;
 }
 
 .form_bg {
-	width: 100%;
+	width: 92%;
 	background-color: white;
 	opacity: 0.9;
 	padding: 10px 10px 10px 20px;
@@ -510,6 +536,7 @@ font-size: 24px;
 	.title{
 		width: 45%;
 		border-right: 1px solid #ccc;
+		padding: 0 40px 0 20px;
 		
 		h1{
 			line-height: 50px;
@@ -518,7 +545,7 @@ font-size: 24px;
 	}
 	
 	.form {
-		width: 50%;
+		width: 45%;
 		padding: 0 10px 0 0;
 		margin: 40px 0 0 0;
 	}
