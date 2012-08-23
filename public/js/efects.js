@@ -68,6 +68,10 @@ $(document).ready(function(cuenta) {
 	
 	/*HOW*/
 	$('.icon_active').hide();
+	if ($('#text_clave').show){
+		$('#clave').children('.icon_default').hide();
+		$('#clave').children('.icon_active').show();
+	}
 	$('#clave').click(function(){
 		$('.description').hide();
 		$('#text_clave').fadeIn();
