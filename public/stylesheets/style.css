@@ -180,7 +180,7 @@ h4.signature {
 .slide_off {
 	background-color: transparent;
 }
-.slide_active, li:active {
+.slide_active {
 	background-color: #a1a1a1;
 }
 
