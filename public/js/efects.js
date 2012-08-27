@@ -117,5 +117,30 @@ $(document).ready(function(cuenta) {
 		$(this).children('.icon_default').hide();
 		$(this).children('.icon_active').show();
 	});
-	
+
+	/*WANT*/
+	$('#submit').click(function(){
+		$('.notice').remove();
+		$('#submit').attr('disabled', true);
+		if(($('input#name').val() != '') && ($('input#mail').val() != '')){
+			var name = $('input#name').val();
+			var mail = $('input#mail').val();
+			$.ajax({  
+			url: '/new_user',  
+			type: 'POST',  
+			data: 'name=' + name + '&mail=' + mail,
+  
+			success: function() {  
+				$('.form').append('<span class="notice">¡Gracias! Una persona de nuestro equipo estará en contacto contigo.</span>');
+				$('#submit').attr('disabled', false);
+				document.contact_form.reset();
+			}
+			});
+			return false;
+		}else{
+			$('.form').append('<span class="notice">¡Oh! Falto algo.</span>');
+			$('#submit').attr('disabled', false);
+			return false;
+		}
+	});
 });

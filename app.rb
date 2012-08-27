@@ -41,12 +41,16 @@ class App < Sinatra::Base
   post('/new_user') do
     user = User.new(params)
     user.save
-    redirect '/'
   end
 
   get('/contacts') do
     @users = User.all
     slim :contacts
+  end
+
+  get('/contacts/destroy/:id') do
+    User.where(:_id => params[:id]).first.destroy
+    redirect '/contacts'
   end
 
 end

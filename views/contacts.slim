@@ -1,6 +1,7 @@
 section.user
   - @users.each do |user|
-    div.name_user
+    div.user_name
       = user.name
-    div.mail.user
+    div.user_mail
       = user.mail
+    a href="/contacts/destroy/#{user._id}" X
