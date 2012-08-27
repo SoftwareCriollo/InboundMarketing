@@ -1,8 +1,8 @@
 $(document).ready(function(cuenta) {
 	$scrollorama = $.scrollorama({blocks:'#wrapper', enablePin:false});
 	$scrollorama.animate('.fold_quees .quees',{
-		duration: 1400, property:'zoom', start: 0, end: 1},{
-		duration: 1500, property:'opacity', start: 0, end: 1}
+		duration: 1000, property:'zoom', start: 0, end: 1},{
+		duration: 1100, property:'opacity', start: 0, end: 1}
 	);
 
 	/*PERCENT*/
