@@ -6,7 +6,7 @@ require 'mongoid'
 
 Mongoid.load!("config/mongoid.yml")
 
-Slim::Engine.set_default_options :sections => false
+Slim::Engine.set_default_options :sections => true
 
 class User
 
