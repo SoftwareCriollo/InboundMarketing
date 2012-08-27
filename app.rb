@@ -18,10 +18,6 @@ class User
 
 end
 
-def set_message
-  flash[:notice] = "Thank you, we have updated your order with %s" 
-end
-
 class App < Sinatra::Base
 
   set :public, File.join(File.dirname(__FILE__), 'public')
