@@ -4,9 +4,23 @@ require 'slim'
 require 'sass'
 require 'mongoid'
 
-#Mongoid.load!("config/mongoid.yml")
+Mongoid.load!("config/mongoid.yml")
 
-Slim::Engine.set_default_options :sections => true
+Slim::Engine.set_default_options :sections => false
+
+class User
+
+  include Mongoid::Document
+  include Mongoid::Timestamps
+
+  field :name, type: String
+  field :mail, type: String
+
+end
+
+def set_message
+  flash[:notice] = "Thank you, we have updated your order with %s" 
+end
 
 class App < Sinatra::Base
 
@@ -20,7 +34,19 @@ class App < Sinatra::Base
   end
 
 
-  get('/'){ slim :index}
-  
+  get('/') do 
+    slim :index
+  end
+
+  post('/new_user') do
+    user = User.new(params)
+    user.save
+    redirect '/'
+  end
+
+  get('/contacts') do
+    @users = User.all
+    slim :contacts
+  end
 
 end

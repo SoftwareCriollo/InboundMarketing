@@ -275,9 +275,10 @@
       h1 ¿Quieres una página web de Inbound marketing como esta?     
       p Déjanos ayudarte ¡Contactanos!
     .form.right
-      input type="text" name="s" id="s" value="Tu nombre completo" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"
-      input type="text" name="s" id="s" value="Correo electrónico" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"
-      input type="submit" name="s" id="s" value="Enviar" class="boton"
+      form action="/new_user" method="POST"
+        input type="text" name="name" id="name" value="Tu nombre completo"  required="required" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"
+        input type="text" name="mail" id="mail" value="Correo electrónico" required="required" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"
+        input type="submit" name="s" id="s" value="Enviar" class="boton"
 
 
 					  
