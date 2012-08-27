@@ -130,15 +130,16 @@ $(document).ready(function(cuenta) {
 			type: 'POST',  
 			data: 'name=' + name + '&mail=' + mail,
   
-			success: function() {  
-				$('.form').append('<span class="notice">¡Gracias! Una persona de nuestro equipo estará en contacto contigo.</span>');
-				$('#submit').attr('disabled', false);
+			success: function() {
+				$('.form_bg').append('<p class="notice"><span>¡Gracias!</span> Una persona de nuestro equipo estará en contacto contigo.</span>');
+				$('.title').remove();
+				$('.form').remove();
 				document.contact_form.reset();
 			}
 			});
 			return false;
 		}else{
-			$('.form').append('<span class="notice">¡Oh! Falto algo.</span>');
+			$('.form').append('<p class="notice">¡Oh! Falto algo.</span>');
 			$('#submit').attr('disabled', false);
 			return false;
 		}
