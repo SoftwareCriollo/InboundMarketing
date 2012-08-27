@@ -29,7 +29,7 @@ class App < Sinatra::Base
 
   helpers do
     def partial(page, options={})
-      haml page, options.merge!(:layout => false)
+      slim page, options.merge!(:layout => false)
     end
   end
 
@@ -45,7 +45,7 @@ class App < Sinatra::Base
 
   get('/contacts') do
     @users = User.all
-    slim :contacts
+    slim :contacts, :locals => {:user => @users}
   end
 
   get('/contacts/destroy/:id') do
