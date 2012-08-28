@@ -1,7 +1,13 @@
-section.user
+section.contacts
+  .top
+    .colum_name Name
+    .colum_mail Email
+    .clear
   - user.each do |user|
-    div.user_name
+    .contact_name
       = user.name
-    div.user_mail
+    .contact_mail
       = user.mail
-    a href="/contacts/destroy/#{user._id}" X
+    .delete_contact
+      a title="Borrar" href="/contacts/destroy/#{user._id}" X
+    hr
