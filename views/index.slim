@@ -46,30 +46,40 @@
     p El Inbound marketing ha tenido un gran auge gracias a que el Outbound marketing esta desvaneciendo.
     p El marketing es Inbound cuando tus clientes llegan a ti, y es Outbound cuando tu tienes que salir a buscar clientes.
     p El Inbound marketing depende de la abilidad de crear contenido de primera calidad, mientras que el  Outbound marketing depende del presupuesto que se tenga.		
-  .image.right
-    .text#graph_1{style="display: none;"}
+  .image.right{style="overflow: hidden;"}
+    .text#graph_1{style="display: none; height: 400px;"}
       h2 El Inbound marketing es
       h3 61%
       h2 más efectivo en costos que el Outbound marketing.
-    .text#graph_2{style="display: none;"}
+    .text#graph_2{style="display: none; height: 400px;"}
       h3 89%
       h2 de las compañias mantienen o incrementan su presupuesto para Inbound marketing.
-    .text#graph_3{style="display: none;"}
+    .text#graph_3{style="display: none; height: 400px;"}
       h3 93%
       h2 de las compras en línea son efectuadas porque la compañia sale entre los primeros resultados de los buscadores.
-    .text#graph_4{style="display: none;"}
+    .text#graph_4{style="display: none; height: 400px;"}
       h3 88%
       h2 de los clicks vienen de busquedas orgánicas. El 12% viene de la publicidad paga (pay per click).
-    .text#graph_5{style="display: none;"}
+    .text#graph_5{style="display: none; height: 400px;"}
       h3 71%
       h2 de los usuarios buscan y consiguen la informacion en internet.
     .graph{style="padding-top: 1px;"}
       img src="/images/graph_1.png"
-    .graph#percent
+    .graph#percent{style="overflow: hidden;"}
       img src="/images/graph.png"
-    
   .clear
-
+  .slide_graph.right
+    ul
+      li#first.slide_off
+        span 1
+      li#second.slide_off
+        span 2
+      li#third.slide_off
+        span 3
+      li#fourth.slide_off
+        span 4
+      li#fifth.slide_off
+        span 5
     
 .fold_connection
   img src="/images/line-separation.png"
@@ -262,14 +272,14 @@
 .fold_want
   .form_bg.left
     .title.left
-      h1 ¿Quieres una página web de Inbound marketing como esta?     
+      h1 ¿Quieres una página web de Inbound marketing como esta?
       p Déjanos ayudarte ¡Contactanos!
     .form.right
-      input type="text" name="s" id="s" value="Tu nombre completo" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"
-      input type="text" name="s" id="s" value="Correo electrónico" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"
-      input type="text" name="s" id="s" value="Háblanos de tu proyecto" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"
-
-      input type="submit" name="s" id="s" value="Enviar" class="boton"
+      form name="contact_form" id="contact_form" action="/new_user" method="POST"
+        input type="text" name="name" id="name" placeholder="Tu nombre completo" required="required"
+        input type="email" name="mail" id="mail" placeholder="Correo electrónico" required="required"
+        input type="description" name="description" id="mail" placeholder="Háblanos de tu proyecto" required="required"
+        input type="submit" name="submit" id="submit" value="Enviar" class="boton"
 
 
 					  
