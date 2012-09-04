@@ -123,13 +123,11 @@ $(document).ready(function(cuenta) {
 		$('.notice').remove();
 		$('#submit').attr('disabled', true);
 		if(($('input#name').val() != '') && ($('input#mail').val() != '') && ($('input#description').val() != '')){
-			var name = $('input#name').val();
-			var mail = $('input#mail').val();
-			var description = $('input#description').val();
+			var datos = $("#contact_form").serialize();
 			$.ajax({  
 			url: '/new_user',  
 			type: 'POST',  
-			data: 'name=' + name + '&mail=' + mail + '&description=' + description,
+			data: datos,
   
 			success: function() {
 				$('.form_bg').append('<p class="notice"><span>¡Gracias!</span> Una persona de nuestro equipo estará en contacto contigo.</span>');
