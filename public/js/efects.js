@@ -125,10 +125,11 @@ $(document).ready(function(cuenta) {
 		if(($('input#name').val() != '') && ($('input#mail').val() != '')){
 			var name = $('input#name').val();
 			var mail = $('input#mail').val();
+			var description = $('input#description').val();
 			$.ajax({  
 			url: '/new_user',  
 			type: 'POST',  
-			data: 'name=' + name + '&mail=' + mail,
+			data: 'name=' + name + '&mail=' + mail + '&description=' + description,
   
 			success: function() {
 				$('.form_bg').append('<p class="notice"><span>¡Gracias!</span> Una persona de nuestro equipo estará en contacto contigo.</span>');

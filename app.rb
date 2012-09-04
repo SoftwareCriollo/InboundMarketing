@@ -15,7 +15,7 @@ class User
 
   field :name, type: String
   field :mail, type: String
-
+  field :description, type: String
 end
 
 class App < Sinatra::Base

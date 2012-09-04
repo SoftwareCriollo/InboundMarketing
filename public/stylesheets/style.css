@@ -467,18 +467,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#686868', end
 	width: 100%;
 }
 
-.colum_name, .colum_mail{
+.colum_name, .colum_mail, .colum_description{
 	border-right: 1px solid #555;
 	color: #fff;
 	padding: 10px 0px;
 }
 
-.colum_name, .colum_mail, .contact_name, .contact_mail {
+.colum_name, .colum_mail, .contact_name, .contact_mail, .contact_description {
 	float: left;
 	margin: 0 5px;
-	width: 47%;
+	width: 30%;
 }
 
+.delete_contact {
+	width: 5%;
+}
 .delete_contact a {
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
@@ -494,6 +497,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#686868', end
 	background: -moz-linear-gradient(top, #fe9601, #fe7201);
 }
 
+hr {
+	width: 99%;
+	height: 1px;
+	border: none;
+	background: #ccc;
+}
 
 
 

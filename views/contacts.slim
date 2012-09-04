@@ -2,12 +2,17 @@ section.contacts
   .top
     .colum_name Name
     .colum_mail Email
+    .colum_description Description
+
     .clear
   - user.each do |user|
     .contact_name
       = user.name
     .contact_mail
       = user.mail
-    .delete_contact
+    .contact_description
+      = user.description
+    .delete_contact.right
       a title="Borrar" href="/contacts/destroy/#{user._id}" X
+    .clear
     hr
