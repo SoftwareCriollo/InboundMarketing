@@ -122,7 +122,7 @@ $(document).ready(function(cuenta) {
 	$('#submit').click(function(){
 		$('.notice').remove();
 		$('#submit').attr('disabled', true);
-		if(($('input#name').val() != '') && ($('input#mail').val() != '')){
+		if(($('input#name').val() != '') && ($('input#mail').val() != '') && ($('input#description').val() != '')){
 			var name = $('input#name').val();
 			var mail = $('input#mail').val();
 			var description = $('input#description').val();
@@ -142,7 +142,20 @@ $(document).ready(function(cuenta) {
 		}else{
 			$('.form').append('<p class="notice">¡Oh! Falto algo.</span>');
 			$('#submit').attr('disabled', false);
-			return false;
 		}
 	});
+	
+	/*FORM*/
+	$('input').focusin(function(){
+		if($(this).val() == ''){
+			$(this).parent('.input-placeholder').children('label.label_input').hide();
+		}
+	});
+
+	$('input').focusout(function(){
+		if($(this).val() == ''){
+			$(this).parent('.input-placeholder').children('label.label_input').show();
+		}
+	});
+
 });

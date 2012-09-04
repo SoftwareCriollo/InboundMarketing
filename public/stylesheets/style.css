@@ -30,6 +30,10 @@ a:hover {
 body {
   background-image: url("/images/bg.png"); }
 
+a img {
+  border: none;
+}
+
 #wrapper {
   width: 75%;
   margin: 0 auto; }
@@ -390,6 +394,31 @@ p.notice span {
 	margin-bottom: 20px;
 }
 
+.input-placeholder {
+	position: relative;
+}
+
+label.label_input {
+	width: 85%;
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	bottom: 1px;
+	left: 2px;
+	height: 19px;
+	z-index: 1;
+	padding: 13px 3px 13px 10px;
+	font-size: 1.2em;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	line-height: 20px;
+	color: #999;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+	white-space: nowrap;
+	cursor: text;
+	color: #ccc;
+	display: block;
+}
+
 .form_bg {
   width: 92%;
   background-color: white;
@@ -407,6 +436,7 @@ p.notice span {
     padding: 0 10px 0 0;
     margin: 40px 0 0 0; }
   .form_bg input {
+    display: block;
     width: 85%;
     border: 1px solid #ccc;
     height: 35px;

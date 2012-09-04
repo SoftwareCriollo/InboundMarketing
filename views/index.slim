@@ -276,9 +276,15 @@
       p Déjanos ayudarte ¡Contactanos!
     .form.right
       form name="contact_form" id="contact_form" action="/new_user" method="POST"
-        input type="text" name="name" id="name" placeholder="Tu nombre completo" required="required"
-        input type="email" name="mail" id="mail" placeholder="Correo electrónico" required="required"
-        input type="text" name="description" id="description" placeholder="Háblanos de tu proyecto" required="required"
+        .input-placeholder
+          input type="text" name="name" id="name" value="" required="required"
+          label.label_input for="name" Tu nombre completo
+        .input-placeholder
+          input type="email" name="mail" id="mail" value="" required="required"
+          label.label_input for="mail" Correo electrónico
+        .input-placeholder
+          input type="text" name="description" id="description" value=""  required="required"
+          label.label_input for="description" Háblanos de tu proyecto
         input type="submit" name="submit" id="submit" value="Enviar" class="boton"
 
 
