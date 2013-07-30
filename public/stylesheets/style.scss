@@ -1,15 +1,51 @@
-//*TYPOGRAPHY*//
+@font-face {
+    font-family: 'museo';
+    src: url('/typography/museo300-regular-webfont.eot');
+    src: url('/typography/museo300-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/typography/museo300-regular-webfont.woff') format('woff'),
+         url('/typography/museo300-regular-webfont.ttf') format('truetype'),
+         url('/typography/museo300-regular-webfont.svg#museo300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'museo_sans';
+    src: url('/typography/museosans_500-webfont.eot');
+    src: url('/typography/museosans_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/typography/museosans_500-webfont.woff') format('woff'),
+         url('/typography/museosans_500-webfont.ttf') format('truetype'),
+         url('/typography/museosans_500-webfont.svg#museo_sans500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bebas_neue';
+    src: url('/typography/bebasneue-webfont.eot');
+    src: url('/typography/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/typography/bebasneue-webfont.woff') format('woff'),
+         url('/typography/bebasneue-webfont.ttf') format('truetype'),
+         url('/typography/bebasneue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*TYPOGRAPHY*/
 
 h1 {
 	font-size: 3em;
 	font-weight: 300;
 	letter-spacing: -3px;
+  font-family: "museo_sans", "arial", "sans-serif";
 }
 
 h2 {
-	font-size: 2.2em;
+	font-size: 2em;
 	font-weight: 100;
-	letter-spacing: -2px;
+	letter-spacing: -1px;
+  font-family: "museo", "arial", "sans-serif";
+
 }
 
 h4 {
@@ -105,8 +141,9 @@ body {
 		margin: 2.6em 0 0 0;
 		font-size: 1.5em;
 		letter-spacing: -0.5px;
+    font-family: "museo_sans", "arial", "sans-serif";
 	  }
-	
+      	
 	}
 	
 }
@@ -144,6 +181,7 @@ h4.signature {
 		p {
 			font-size: 20px;
 			margin: 0;
+      font-family: "museo", "arial", "sans-serif";
 		}
 		
 		p.signature {
@@ -184,6 +222,7 @@ h4.signature {
 
 	.text h1 {
 		text-align: left;
+    font-size: 2.9em;
 	}
 
 	.image {
@@ -207,6 +246,7 @@ h4.signature {
     color: white;
     font-weight: 100;
     text-transform: uppercase;
+    font-family: "museo_sans", "arial", "sans-serif";
     }
  
 }
@@ -216,7 +256,11 @@ h4.signature {
 
 .fold_inboundoutbound{
   .text {
-	height: 670px;
+	  height: 670px;
+    h1 {
+        font-size: 2.9em;
+      }
+
 }
 	.image{
 		
@@ -241,6 +285,7 @@ h4.signature {
 				font-size: 9em;
 				margin: 40px 0 0 0;
 				line-height: 0.7em;
+        font-family: "bebas_neue", "arial", "sans-serif";
 			}		
 		}
 		
@@ -270,6 +315,7 @@ h4.signature {
 		  color: #444146;
 		  font-weight: normal;
 		  letter-spacing: -1px;
+      font-family: "museo_sans", "arial", "sans-serif";
 	    } 
 	  
 	  p {
@@ -343,22 +389,25 @@ h4.signature {
 	  }
 	
 	  h2 {
-		font-size: 18px;
-		text-transform: none;
-		line-height: 0;
+  		font-size: 28px;
+	  	text-transform: none;
+		  line-height: 0;
+      color: #444146 !important;
 	}
 }
 }
 
 .fivecolumns {
 	text-align: center;
-	width: 160px;
-	margin: 20px 51px 40px 0;
+	width: 170px;
+	margin: 20px 40px 40px 0;
 
 	h2 {
 		font-size: 20px;
 		letter-spacing: 0;
 		text-transform: uppercase;
+    font-family: "museo_sans", "arial", "sans-serif";
+    color: #444146;
 	}
 }
 
@@ -550,8 +599,13 @@ font-size: 24px;
 		margin: 40px 0 0 0;
 	}
 	
+  .input-placeholder {
+    font-family: "HelveticaNeue-Light", "arial", "sans-serif";
+    float: left;
+  }
+
 	input, textarea {
-		width: 85%;
+		width: 400px;
 		border: 1px solid #ccc;
 		height: 35px;
 		padding: 5px 10px;

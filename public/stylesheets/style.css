@@ -1,12 +1,36 @@
+@font-face {
+  font-family: 'museo';
+  src: url("/typography/museo300-regular-webfont.eot");
+  src: url("/typography/museo300-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/typography/museo300-regular-webfont.woff") format("woff"), url("/typography/museo300-regular-webfont.ttf") format("truetype"), url("/typography/museo300-regular-webfont.svg#museo300") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'museo_sans';
+  src: url("/typography/museosans_500-webfont.eot");
+  src: url("/typography/museosans_500-webfont.eot?#iefix") format("embedded-opentype"), url("/typography/museosans_500-webfont.woff") format("woff"), url("/typography/museosans_500-webfont.ttf") format("truetype"), url("/typography/museosans_500-webfont.svg#museo_sans500") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'bebas_neue';
+  src: url("/typography/bebasneue-webfont.eot");
+  src: url("/typography/bebasneue-webfont.eot?#iefix") format("embedded-opentype"), url("/typography/bebasneue-webfont.woff") format("woff"), url("/typography/bebasneue-webfont.ttf") format("truetype"), url("/typography/bebasneue-webfont.svg#bebas_neueregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/*TYPOGRAPHY*/
 h1 {
   font-size: 3em;
   font-weight: 300;
-  letter-spacing: -3px; }
+  letter-spacing: -3px;
+  font-family: "museo_sans", "arial", "sans-serif"; }
 
 h2 {
-  font-size: 2.2em;
+  font-size: 2em;
   font-weight: 100;
-  letter-spacing: -2px; }
+  letter-spacing: -1px;
+  font-family: "museo", "arial", "sans-serif"; }
 
 h4 {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -29,10 +53,6 @@ a:hover {
 
 body {
   background-image: url("/images/bg.png"); }
-
-a img {
-  border: none;
-}
 
 #wrapper {
   width: 75%;
@@ -74,7 +94,8 @@ a img {
   .intro .quees p {
     margin: 2.6em 0 0 0;
     font-size: 1.5em;
-    letter-spacing: -0.5px; }
+    letter-spacing: -0.5px;
+    font-family: "museo_sans", "arial", "sans-serif"; }
 
 .fold_connection_left {
   width: 100%; }
@@ -96,7 +117,8 @@ h4.signature {
       margin: 0 0 60px 0; }
     .fold_connection .testimonial p {
       font-size: 20px;
-      margin: 0; }
+      margin: 0;
+      font-family: "museo", "arial", "sans-serif"; }
     .fold_connection .testimonial p.signature {
       font-size: 14px; }
     .fold_connection .testimonial .image {
@@ -113,7 +135,8 @@ h4.signature {
     width: 52%;
     margin: 0 110px 0 0; }
   .fold_quees .text h1 {
-    text-align: left; }
+    text-align: left;
+    font-size: 2.9em; }
   .fold_quees .image {
     margin: 10px 0 0 0;
     width: 100px; }
@@ -131,10 +154,13 @@ h4.signature {
     margin-top: 4.6em;
     color: white;
     font-weight: 100;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: "museo_sans", "arial", "sans-serif"; }
 
 .fold_inboundoutbound .text {
   height: 670px; }
+  .fold_inboundoutbound .text h1 {
+    font-size: 2.9em; }
 .fold_inboundoutbound .image .text {
   position: absolute;
   z-index: 2;
@@ -150,47 +176,12 @@ h4.signature {
   .fold_inboundoutbound .image .text h3 {
     font-size: 9em;
     margin: 40px 0 0 0;
-    line-height: 0.7em; }
+    line-height: 0.7em;
+    font-family: "bebas_neue", "arial", "sans-serif"; }
 
 .graph {
   position: absolute;
   z-index: 1; }
-
-.slide_graph {
-	height: 20px;
-	margin: -50px 245px 20px 0;
-	overflow: hidden;
-}
-
-.slide_graph ul{
-	margin: 5px 5px;
-	padding: 0;
-	list-style: none;
-}
-
-.slide_graph ul li {
-	border: 1px solid #a1a1a1;
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
-	-o-border-radius: 100px;
-	border-radius: 100px;
-	float: left;
-	height: 8px;
-	margin: 0 5px;
-	padding: 0;
-	width: 8px;
-}
-
-.slide_off {
-	background-color: transparent;
-}
-.slide_active {
-	background-color: #a1a1a1;
-}
-
-.slide_graph ul li span{
-	display: none;
-}
 
 .fold_why {
   height: 680px; }
@@ -203,7 +194,8 @@ h4.signature {
     text-transform: uppercase;
     color: #444146;
     font-weight: normal;
-    letter-spacing: -1px; }
+    letter-spacing: -1px;
+    font-family: "museo_sans", "arial", "sans-serif"; }
   .fold_why p {
     font-size: 18px;
     text-align: left; }
@@ -246,18 +238,21 @@ h4.signature {
     font-size: 18px;
     margin: 0 0 30px 0; }
   .fold_how .side h2 {
-    font-size: 18px;
+    font-size: 28px;
     text-transform: none;
-    line-height: 0; }
+    line-height: 0;
+    color: #444146 !important; }
 
 .fivecolumns {
   text-align: center;
-  width: 160px;
-  margin: 20px 51px 40px 0; }
+  width: 170px;
+  margin: 20px 40px 40px 0; }
   .fivecolumns h2 {
     font-size: 20px;
     letter-spacing: 0;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: "museo_sans", "arial", "sans-serif";
+    color: #444146; }
 
 .line {
   width: 100%;
@@ -377,48 +372,6 @@ h4.signature {
   height: 400px;
   margin: 60px 0 0 0; }
 
-p.notice {
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	font-size: 22px;
-	text-align: justify;
-	line-height: 30px;
-	font-weight: 100;
-	color: #262227;
-	text-align: center;
-}
-
-p.notice span {
-	display: block;
-	font-size: 3em;
-	letter-spacing: -3px;
-	margin-bottom: 20px;
-}
-
-.input-placeholder {
-	position: relative;
-}
-
-label.label_input {
-	width: 85%;
-	position: absolute;
-	top: 1px;
-	right: 1px;
-	bottom: 1px;
-	left: 2px;
-	height: 19px;
-	z-index: 1;
-	padding: 13px 3px 13px 10px;
-	font-size: 1.2em;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	line-height: 20px;
-	color: #999;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
-	white-space: nowrap;
-	cursor: text;
-	color: #ccc;
-	display: block;
-}
-
 .form_bg {
   width: 92%;
   background-color: white;
@@ -435,9 +388,11 @@ label.label_input {
     width: 45%;
     padding: 0 10px 0 0;
     margin: 40px 0 0 0; }
-  .form_bg input {
-    display: block;
-    width: 85%;
+  .form_bg .input-placeholder {
+    font-family: "HelveticaNeue-Light", "arial", "sans-serif";
+    float: left; }
+  .form_bg input, .form_bg textarea {
+    width: 400px;
     border: 1px solid #ccc;
     height: 35px;
     padding: 5px 10px;
@@ -473,66 +428,3 @@ label.label_input {
     /* for webkit browsers */
     background: -moz-linear-gradient(top, #fe7201, #fe9601);
     /* for firefox 3.6+ */ }
-
-/*Contacts list*/
-
-section.contacts {
-	background-color: #fff;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	-webkit-border-radius: 10px 10px 0px 0px;
-        border-radius: 5px 5px 0px 0px;
-	overflow: hidden; 
-}
-
-.top {
-	background: #686868;
-	background: -moz-linear-gradient(top, #686868 0%, #282828 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#686868), color-stop(100%,#282828));
-	background: -webkit-linear-gradient(top, #686868 0%,#282828 100%);
-	background: -o-linear-gradient(top, #686868 0%,#282828 100%);
-	background: -ms-linear-gradient(top, #686868 0%,#282828 100%);
-	background: linear-gradient(to bottom, #686868 0%,#282828 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#686868', endColorstr='#282828',GradientType=0 );
-	margin-bottom: 10px;
-	width: 100%;
-}
-
-.colum_name, .colum_mail, .colum_description{
-	border-right: 1px solid #555;
-	color: #fff;
-	padding: 10px 0px;
-}
-
-.colum_name, .colum_mail, .contact_name, .contact_mail, .contact_description {
-	float: left;
-	margin: 0 5px;
-	width: 30%;
-}
-
-.delete_contact {
-	width: 5%;
-}
-.delete_contact a {
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	-o-border-radius: 20px;
-	border-radius: 20px;
-	color: #fff;
-	margin-left: 5px; 
-	padding: 0 3px;
-	text-decoration: none;
-	background: #fe9601;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe9601', endColorstr='#fe7201');
-	background: -webkit-gradient(linear, left top, left bottom, from(#fe9601), to(#fe7201));
-	background: -moz-linear-gradient(top, #fe9601, #fe7201);
-}
-
-hr {
-	width: 99%;
-	height: 1px;
-	border: none;
-	background: #ccc;
-}
-
-
-

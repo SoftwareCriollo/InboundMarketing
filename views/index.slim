@@ -68,18 +68,6 @@
     .graph#percent{style="overflow: hidden;"}
       img src="/images/graph.png"
   .clear
-  .slide_graph.right
-    ul
-      li#first.slide_off
-        span 1
-      li#second.slide_off
-        span 2
-      li#third.slide_off
-        span 3
-      li#fourth.slide_off
-        span 4
-      li#fifth.slide_off
-        span 5
     
 .fold_connection
   img src="/images/line-separation.png"
@@ -277,14 +265,14 @@
     .form.right
       form name="contact_form" id="contact_form" action="/new_user" method="POST"
         .input-placeholder
-          input type="text" name="name" id="name" value="" required="required"
           label.label_input for="name" Tu nombre completo
+          input type="text" name="name" id="name" value="" required="required"
         .input-placeholder
-          input type="email" name="mail" id="mail" value="" required="required"
           label.label_input for="mail" Correo electrónico
+          input type="email" name="mail" id="mail" value="" required="required"
         .input-placeholder
-          input type="text" name="description" id="description" value=""  required="required"
           label.label_input for="description" Háblanos de tu proyecto
+          input type="text" name="description" id="description" value=""  required="required"
         input type="submit" name="submit" id="submit" value="Enviar" class="boton"
 
 

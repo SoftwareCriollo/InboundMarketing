@@ -143,17 +143,5 @@ $(document).ready(function(cuenta) {
 		}
 	});
 	
-	/*FORM*/
-	$('input').focusin(function(){
-		if($(this).val() == ''){
-			$(this).parent('.input-placeholder').children('label.label_input').hide();
-		}
-	});
-
-	$('input').focusout(function(){
-		if($(this).val() == ''){
-			$(this).parent('.input-placeholder').children('label.label_input').show();
-		}
-	});
 
 });
