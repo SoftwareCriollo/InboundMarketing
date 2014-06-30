@@ -13,6 +13,6 @@ section.contacts
     .contact_description
       = user.description
     .delete_contact.right
-      a title="Borrar" href="/contacts/destroy/#{user._id}" X
+      = user.created_at
     .clear
     hr

@@ -44,9 +44,4 @@ class App < Sinatra::Base
     slim :contacts, :locals => {:user => @users}
   end
 
-  get('/contacts/destroy/:id') do
-    User.where(:_id => params[:id]).first.destroy
-    redirect '/contacts'
-  end
-
 end
